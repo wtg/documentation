@@ -5,8 +5,10 @@ This document contains information on how to use the CMS API and all queries rel
 ### Getting an API KEY
 Every student organization is issued a CMS API key, which is accessible from the 'Web Portal' page of any club. WebTech services use individually issued tokens, which can be obtained by the chairman of WebTech.
 
+The API Key is passed using a custom Authorization HTTP header in the form "Token [key]". This is how the django API systems works which the CMS API is an implementation
+
 ### Get RCS ID
-Query: `http://cms.union.rpi.edu/api/users/view_rcs/[RCS_ID]/`
+Query: `https://cms.union.rpi.edu/api/users/view_rcs/[RCS_ID]/`
 
 Example result:
 ```javascript
@@ -28,7 +30,7 @@ Example result:
 ```
 
 ### Get RIN
-Query: `http://cms.union.rpi.edu/api/users/view_rin/[RIN]/`
+Query: `https://cms.union.rpi.edu/api/users/view_rin/[RIN]/`
 
 Example result:
 ```javascript
@@ -50,7 +52,7 @@ Example result:
 ```
 
 ### Check RnE Status
-Query: `http://cms.union.rpi.edu/api/users/get_if_rne/[RCS_ID]/`
+Query: `https://cms.union.rpi.edu/api/users/get_if_rne/[RCS_ID]/`
 
 Example result:
 ```javascript
@@ -60,7 +62,7 @@ Example result:
 ```
 
 ### Get CMS Organizations for a User
-Query: `http://cms.union.rpi.edu/api/users/get_all_orgs/[RIN]/`
+Query: `https://cms.union.rpi.edu/api/users/get_all_orgs/[RIN]/`
 
 Example result:
 ```javascript
@@ -81,7 +83,7 @@ Example result:
 Note: This query includes all clubs that a user is listed as a member of on CMS. For organizations that a user is officer of, see the next query.
 
 ### Get CMS Organizations where User is Officer
-Query: `http://cms.union.rpi.edu/api/users/get_orgs/[RIN]/`
+Query: `https://cms.union.rpi.edu/api/users/get_orgs/[RIN]/`
 
 Example result:
 ```javascript
