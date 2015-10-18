@@ -10,3 +10,4 @@ Each WebTech repository should be using their wikis for publicly-accessible info
 
 
 ### Useful Information
+* [CMS API Queries](CMS API.md)
