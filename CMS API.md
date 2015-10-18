@@ -2,6 +2,9 @@
 
 This document contains information on how to use the CMS API and all queries relevant to WebTech.
 
+## Step 0: Getting the CMS API KEY
+David will continue his super awesome CMS documentation and get this in there as soon as possible.
+
 ### Get RCS ID
 Query: `http://cms.union.rpi.edu/api/users/view_rcs/[RCS_ID]/`
 
